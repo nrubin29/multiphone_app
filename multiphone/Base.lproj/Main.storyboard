@@ -283,5 +283,23 @@
             </objects>
             <point key="canvasLocation" x="1615.5" y="429"/>
         </scene>
+        <!--Video View Controller-->
+        <scene sceneID="P7A-eT-O6W">
+            <objects>
+                <viewController storyboardIdentifier="video" id="61y-6j-La5" customClass="VideoViewController" customModule="multiphone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jGJ-mB-zun"/>
+                        <viewControllerLayoutGuide type="bottom" id="vJR-Op-SNp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ytx-BO-xG1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Qj-Xv-ym5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2293" y="429"/>
+        </scene>
     </scenes>
 </document>

@@ -19,6 +19,8 @@
 		44D7E64125A3D9A200BCEB47 /* ConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D7E64025A3D9A200BCEB47 /* ConnectedViewController.swift */; };
 		44D9C1FF25A51B850086B696 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D9C1F425A51B760086B696 /* Starscream.framework */; };
 		44D9C20025A51B850086B696 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44D9C1F425A51B760086B696 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44D9C20625A5211D0086B696 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D9C20525A5211D0086B696 /* VideoViewController.swift */; };
+		44D9C20825A523860086B696 /* noahytp.mov in Resources */ = {isa = PBXBuildFile; fileRef = 44D9C20725A523860086B696 /* noahytp.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		44CCE9B725A2A7A000715608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44D7E64025A3D9A200BCEB47 /* ConnectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedViewController.swift; sourceTree = "<group>"; };
 		44D9C1EA25A51B760086B696 /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = "Starscream-swift-23/Starscream.xcodeproj"; sourceTree = "<group>"; };
+		44D9C20525A5211D0086B696 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		44D9C20725A523860086B696 /* noahytp.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = noahytp.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,17 +138,19 @@
 		44CCE9AA25A2A7A000715608 /* multiphone */ = {
 			isa = PBXGroup;
 			children = (
-				4481FDFE25A2DD37006FBCD1 /* shrek.mov */,
 				44CCE9AB25A2A7A000715608 /* AppDelegate.swift */,
 				4481FDF225A2D7EE006FBCD1 /* WebSocketManager.swift */,
 				44CCE9AD25A2A7A000715608 /* ServerViewController.swift */,
 				44D7E64025A3D9A200BCEB47 /* ConnectedViewController.swift */,
 				4481FE0025A2E94C006FBCD1 /* ShrekViewController.swift */,
 				4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */,
+				44D9C20525A5211D0086B696 /* VideoViewController.swift */,
 				44CCE9AF25A2A7A000715608 /* Main.storyboard */,
 				44CCE9B225A2A7A000715608 /* Assets.xcassets */,
 				44CCE9B425A2A7A000715608 /* LaunchScreen.storyboard */,
 				44CCE9B725A2A7A000715608 /* Info.plist */,
+				4481FDFE25A2DD37006FBCD1 /* shrek.mov */,
+				44D9C20725A523860086B696 /* noahytp.mov */,
 			);
 			path = multiphone;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 			files = (
 				4481FDFF25A2DD37006FBCD1 /* shrek.mov in Resources */,
 				44CCE9B625A2A7A000715608 /* LaunchScreen.storyboard in Resources */,
+				44D9C20825A523860086B696 /* noahytp.mov in Resources */,
 				44CCE9B325A2A7A000715608 /* Assets.xcassets in Resources */,
 				44CCE9B125A2A7A000715608 /* Main.storyboard in Resources */,
 			);
@@ -289,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4481FDFB25A2D98B006FBCD1 /* ShrekViewControllerMP.swift in Sources */,
+				44D9C20625A5211D0086B696 /* VideoViewController.swift in Sources */,
 				44CCE9AE25A2A7A000715608 /* ServerViewController.swift in Sources */,
 				44D7E64125A3D9A200BCEB47 /* ConnectedViewController.swift in Sources */,
 				44CCE9AC25A2A7A000715608 /* AppDelegate.swift in Sources */,

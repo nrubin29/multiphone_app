@@ -32,6 +32,11 @@ class ConnectedViewController: UIViewController, WebSocketDelegateSimple {
             let vc = self.storyboard!.instantiateViewControllerWithIdentifier("shrek")
             self.presentViewController(vc, animated: true, completion: nil)
         }
+        
+        else if text == "video" {
+            let vc = self.storyboard!.instantiateViewControllerWithIdentifier("video")
+            self.presentViewController(vc, animated: true, completion: nil)
+        }
     }
 }
 

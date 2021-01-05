@@ -45,10 +45,10 @@ class ServerViewController: UIViewController, UITextFieldDelegate, WebSocketDele
     }
     
     func websocketDidReceiveMessage(text: String) {
-        if text == "shrek" {
-            let vc = self.storyboard!.instantiateViewControllerWithIdentifier("shrek")
-            self.presentViewController(vc, animated: true, completion: nil)
-        }
+//        if text == "shrek" {
+//            let vc = self.storyboard!.instantiateViewControllerWithIdentifier("shrek")
+//            self.presentViewController(vc, animated: true, completion: nil)
+//        }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

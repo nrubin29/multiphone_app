@@ -7,21 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4481FDF325A2D7EE006FBCD1 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481FDF225A2D7EE006FBCD1 /* WebSocketManager.swift */; };
+		4481FDFB25A2D98B006FBCD1 /* ShrekViewControllerMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */; };
+		4481FDFF25A2DD37006FBCD1 /* shrek.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4481FDFE25A2DD37006FBCD1 /* shrek.mov */; };
+		4481FE0125A2E94C006FBCD1 /* ShrekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481FE0025A2E94C006FBCD1 /* ShrekViewController.swift */; };
 		44CCE9AC25A2A7A000715608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE9AB25A2A7A000715608 /* AppDelegate.swift */; };
-		44CCE9AE25A2A7A000715608 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE9AD25A2A7A000715608 /* ViewController.swift */; };
+		44CCE9AE25A2A7A000715608 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE9AD25A2A7A000715608 /* ServerViewController.swift */; };
 		44CCE9B125A2A7A000715608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CCE9AF25A2A7A000715608 /* Main.storyboard */; };
 		44CCE9B325A2A7A000715608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CCE9B225A2A7A000715608 /* Assets.xcassets */; };
 		44CCE9B625A2A7A000715608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CCE9B425A2A7A000715608 /* LaunchScreen.storyboard */; };
+		44CCEAA125A2B04000715608 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CCEA9625A2B03A00715608 /* Starscream.framework */; };
+		44CCEAA225A2B04300715608 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44CCEA9625A2B03A00715608 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44D7E64125A3D9A200BCEB47 /* ConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D7E64025A3D9A200BCEB47 /* ConnectedViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		44CCEA9525A2B03A00715608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B3E79E619D48B7F006071F7;
+			remoteInfo = "Starscream iOS";
+		};
+		44CCEA9725A2B03A00715608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B3E79F119D48B7F006071F7;
+			remoteInfo = "Starscream iOSTests";
+		};
+		44CCEA9925A2B03A00715608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9C3E35F19E48FF1009FC285;
+			remoteInfo = "Starscream OSX";
+		};
+		44CCEA9B25A2B03A00715608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9C3E36919E48FF1009FC285;
+			remoteInfo = "Starscream OSXTests";
+		};
+		44CCEA9D25A2B03A00715608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 091277971BD673A70003036D;
+			remoteInfo = "Starscream tvOS";
+		};
+		44CCEA9F25A2B03A00715608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 091277A01BD673A70003036D;
+			remoteInfo = "Starscream tvOSTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44CCEA8A25A2AF9200715608 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44CCEAA225A2B04300715608 /* Starscream.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4481FDF225A2D7EE006FBCD1 /* WebSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrekViewControllerMP.swift; sourceTree = "<group>"; };
+		4481FDFE25A2DD37006FBCD1 /* shrek.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = shrek.mov; sourceTree = "<group>"; };
+		4481FE0025A2E94C006FBCD1 /* ShrekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrekViewController.swift; sourceTree = "<group>"; };
 		44CCE9A825A2A7A000715608 /* multiphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CCE9AB25A2A7A000715608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		44CCE9AD25A2A7A000715608 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44CCE9AD25A2A7A000715608 /* ServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewController.swift; sourceTree = "<group>"; };
 		44CCE9B025A2A7A000715608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44CCE9B225A2A7A000715608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44CCE9B525A2A7A000715608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44CCE9B725A2A7A000715608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = "../../Downloads/Starscream-swift-23/Starscream.xcodeproj"; sourceTree = "<group>"; };
+		44D7E64025A3D9A200BCEB47 /* ConnectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44CCEAA125A2B04000715608 /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +110,7 @@
 		44CCE99F25A2A7A000715608 = {
 			isa = PBXGroup;
 			children = (
+				44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */,
 				44CCE9AA25A2A7A000715608 /* multiphone */,
 				44CCE9A925A2A7A000715608 /* Products */,
 			);
@@ -54,14 +127,32 @@
 		44CCE9AA25A2A7A000715608 /* multiphone */ = {
 			isa = PBXGroup;
 			children = (
+				4481FDFE25A2DD37006FBCD1 /* shrek.mov */,
 				44CCE9AB25A2A7A000715608 /* AppDelegate.swift */,
-				44CCE9AD25A2A7A000715608 /* ViewController.swift */,
+				4481FDF225A2D7EE006FBCD1 /* WebSocketManager.swift */,
+				44CCE9AD25A2A7A000715608 /* ServerViewController.swift */,
+				44D7E64025A3D9A200BCEB47 /* ConnectedViewController.swift */,
+				4481FE0025A2E94C006FBCD1 /* ShrekViewController.swift */,
+				4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */,
 				44CCE9AF25A2A7A000715608 /* Main.storyboard */,
 				44CCE9B225A2A7A000715608 /* Assets.xcassets */,
 				44CCE9B425A2A7A000715608 /* LaunchScreen.storyboard */,
 				44CCE9B725A2A7A000715608 /* Info.plist */,
 			);
 			path = multiphone;
+			sourceTree = "<group>";
+		};
+		44CCEA8D25A2B03A00715608 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44CCEA9625A2B03A00715608 /* Starscream.framework */,
+				44CCEA9825A2B03A00715608 /* Starscream iOSTests.xctest */,
+				44CCEA9A25A2B03A00715608 /* Starscream.framework */,
+				44CCEA9C25A2B03A00715608 /* Starscream OSXTests.xctest */,
+				44CCEA9E25A2B03A00715608 /* Starscream.framework */,
+				44CCEAA025A2B03A00715608 /* Starscream tvOSTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +165,7 @@
 				44CCE9A425A2A7A000715608 /* Sources */,
 				44CCE9A525A2A7A000715608 /* Frameworks */,
 				44CCE9A625A2A7A000715608 /* Resources */,
+				44CCEA8A25A2AF9200715608 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -96,6 +188,7 @@
 				TargetAttributes = {
 					44CCE9A725A2A7A000715608 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3X4CJ3X2T6;
 					};
 				};
 			};
@@ -110,6 +203,12 @@
 			mainGroup = 44CCE99F25A2A7A000715608;
 			productRefGroup = 44CCE9A925A2A7A000715608 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 44CCEA8D25A2B03A00715608 /* Products */;
+					ProjectRef = 44CCEA8C25A2B03A00715608 /* Starscream.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				44CCE9A725A2A7A000715608 /* multiphone */,
@@ -117,11 +216,57 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		44CCEA9625A2B03A00715608 /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = 44CCEA9525A2B03A00715608 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44CCEA9825A2B03A00715608 /* Starscream iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Starscream iOSTests.xctest";
+			remoteRef = 44CCEA9725A2B03A00715608 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44CCEA9A25A2B03A00715608 /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = 44CCEA9925A2B03A00715608 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44CCEA9C25A2B03A00715608 /* Starscream OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Starscream OSXTests.xctest";
+			remoteRef = 44CCEA9B25A2B03A00715608 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44CCEA9E25A2B03A00715608 /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = 44CCEA9D25A2B03A00715608 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44CCEAA025A2B03A00715608 /* Starscream tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Starscream tvOSTests.xctest";
+			remoteRef = 44CCEA9F25A2B03A00715608 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		44CCE9A625A2A7A000715608 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4481FDFF25A2DD37006FBCD1 /* shrek.mov in Resources */,
 				44CCE9B625A2A7A000715608 /* LaunchScreen.storyboard in Resources */,
 				44CCE9B325A2A7A000715608 /* Assets.xcassets in Resources */,
 				44CCE9B125A2A7A000715608 /* Main.storyboard in Resources */,
@@ -135,8 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CCE9AE25A2A7A000715608 /* ViewController.swift in Sources */,
+				4481FDFB25A2D98B006FBCD1 /* ShrekViewControllerMP.swift in Sources */,
+				44CCE9AE25A2A7A000715608 /* ServerViewController.swift in Sources */,
+				44D7E64125A3D9A200BCEB47 /* ConnectedViewController.swift in Sources */,
 				44CCE9AC25A2A7A000715608 /* AppDelegate.swift in Sources */,
+				4481FE0125A2E94C006FBCD1 /* ShrekViewController.swift in Sources */,
+				4481FDF325A2D7EE006FBCD1 /* WebSocketManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +400,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = multiphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nrubintech.multiphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,7 +413,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = multiphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nrubintech.multiphone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +441,7 @@
 				44CCE9BC25A2A7A000715608 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

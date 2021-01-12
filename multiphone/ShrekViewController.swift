@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MediaPlayer
+import AVFoundation
 
 class ShrekViewController: UIViewController, WebSocketDelegateSimple {
     private var player: AVPlayer!

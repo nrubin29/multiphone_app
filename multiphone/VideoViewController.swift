@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MediaPlayer
+import AVFoundation
 
 class VideoViewController: UIViewController, WebSocketDelegateSimple {
     private var player: AVPlayer!

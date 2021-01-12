@@ -11,6 +11,8 @@
 		4481FDFB25A2D98B006FBCD1 /* ShrekViewControllerMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */; };
 		4481FDFF25A2DD37006FBCD1 /* shrek.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4481FDFE25A2DD37006FBCD1 /* shrek.mov */; };
 		4481FE0125A2E94C006FBCD1 /* ShrekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481FE0025A2E94C006FBCD1 /* ShrekViewController.swift */; };
+		44B3B0FC25AD314900271CEC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3B0FB25AD314900271CEC /* CameraViewController.swift */; };
+		44B3B10325AD351700271CEC /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3B10225AD351700271CEC /* CardViewController.swift */; };
 		44CCE9AC25A2A7A000715608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE9AB25A2A7A000715608 /* AppDelegate.swift */; };
 		44CCE9AE25A2A7A000715608 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE9AD25A2A7A000715608 /* ServerViewController.swift */; };
 		44CCE9B125A2A7A000715608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CCE9AF25A2A7A000715608 /* Main.storyboard */; };
@@ -93,6 +95,8 @@
 		4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrekViewControllerMP.swift; sourceTree = "<group>"; };
 		4481FDFE25A2DD37006FBCD1 /* shrek.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = shrek.mov; sourceTree = "<group>"; };
 		4481FE0025A2E94C006FBCD1 /* ShrekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrekViewController.swift; sourceTree = "<group>"; };
+		44B3B0FB25AD314900271CEC /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		44B3B10225AD351700271CEC /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		44CCE9A825A2A7A000715608 /* multiphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CCE9AB25A2A7A000715608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44CCE9AD25A2A7A000715608 /* ServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				4481FE0025A2E94C006FBCD1 /* ShrekViewController.swift */,
 				4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */,
 				44D9C20525A5211D0086B696 /* VideoViewController.swift */,
+				44B3B10225AD351700271CEC /* CardViewController.swift */,
+				44B3B0FB25AD314900271CEC /* CameraViewController.swift */,
 				44CCE9AF25A2A7A000715608 /* Main.storyboard */,
 				44CCE9B225A2A7A000715608 /* Assets.xcassets */,
 				44CCE9B425A2A7A000715608 /* LaunchScreen.storyboard */,
@@ -300,6 +306,8 @@
 				44CCE9AE25A2A7A000715608 /* ServerViewController.swift in Sources */,
 				44D7E64125A3D9A200BCEB47 /* ConnectedViewController.swift in Sources */,
 				44CCE9AC25A2A7A000715608 /* AppDelegate.swift in Sources */,
+				44B3B10325AD351700271CEC /* CardViewController.swift in Sources */,
+				44B3B0FC25AD314900271CEC /* CameraViewController.swift in Sources */,
 				4481FE0125A2E94C006FBCD1 /* ShrekViewController.swift in Sources */,
 				4481FDF325A2D7EE006FBCD1 /* WebSocketManager.swift in Sources */,
 			);

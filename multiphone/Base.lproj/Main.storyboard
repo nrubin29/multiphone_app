@@ -98,7 +98,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="192.168.1.32" borderStyle="roundedRect" placeholder="IP Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3f7-iu-v2N">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10.0.0.187" borderStyle="roundedRect" placeholder="IP Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3f7-iu-v2N">
                                 <rect key="frame" x="200" y="247" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="OPB-qz-TNF"/>
@@ -300,6 +300,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Qj-Xv-ym5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2293" y="429"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="ltx-vf-Xtg">
+            <objects>
+                <viewController storyboardIdentifier="card" id="g94-ie-qwx" customClass="CardViewController" customModule="multiphone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lu3-Zb-AKZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nmq-kZ-djf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="whC-ix-JeA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gBm-wH-ev6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gBm-wH-ev6" firstAttribute="bottom" secondItem="Nmq-kZ-djf" secondAttribute="top" id="BBq-ho-Yy3"/>
+                            <constraint firstAttribute="trailing" secondItem="gBm-wH-ev6" secondAttribute="trailing" id="Sed-U9-c8s"/>
+                            <constraint firstItem="gBm-wH-ev6" firstAttribute="top" secondItem="whC-ix-JeA" secondAttribute="top" id="jD0-iz-gHg"/>
+                            <constraint firstItem="gBm-wH-ev6" firstAttribute="leading" secondItem="whC-ix-JeA" secondAttribute="leading" id="rLx-Lh-hBi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="gBm-wH-ev6" id="esX-OQ-jod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2o-6c-FGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2943" y="429"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="vqC-bb-LFi">
+            <objects>
+                <viewController storyboardIdentifier="camera" id="khq-L0-5DZ" customClass="CameraViewController" customModule="multiphone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kAN-OV-0NH"/>
+                        <viewControllerLayoutGuide type="bottom" id="puF-8r-6GQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="693-NR-35f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCp-Uf-sAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3612" y="429"/>
         </scene>
     </scenes>
 </document>

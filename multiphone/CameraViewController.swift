@@ -1,5 +1,5 @@
 //
-//  CardViewController.swift
+//  CameraViewController.swift
 //  multiphone
 //
 //  Created by El Capitan on 1/11/21.
@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
-class CardViewController: UIViewController, WebSocketDelegateSimple {
-    @IBOutlet weak var imageView: UIImageView!
-    
+class CameraViewController: UIViewController, WebSocketDelegateSimple {
     override func viewDidLoad() {
         super.viewDidLoad()
         WebSocketManager.shared.delegate = self
@@ -18,7 +17,11 @@ class CardViewController: UIViewController, WebSocketDelegateSimple {
         WebSocketManager.shared.ready()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+    }
+    
     func websocketDidReceiveMessage(text: String) {
-        imageView.image = UIImage(named: text)
+        
     }
 }

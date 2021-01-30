@@ -23,6 +23,8 @@ class ChessViewController: UIViewController, WebSocketDelegateSimple {
         let tap = UITapGestureRecognizer(target: self, action: #selector(onTouch))
         view.userInteractionEnabled = true
         view.addGestureRecognizer(tap)
+        
+        WebSocketManager.shared.ready()
     }
     
     func websocketDidReceiveMessage(text: String) {

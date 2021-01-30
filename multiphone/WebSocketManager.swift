@@ -40,6 +40,10 @@ class WebSocketManager: WebSocketDelegate {
         self.socket.writeString(text)
     }
     
+    func ready() {
+        self.socket.writeString("ready")
+    }
+    
     func websocketDidConnect(socket: WebSocket) {
         print("websocketDidConnect()")
         socket.writeString("phoneId \(self.phoneId)")

@@ -16,37 +16,51 @@ class VideoViewController: UIViewController, WebSocketDelegateSimple {
         super.viewDidLoad()
         WebSocketManager.shared.delegate = self
         self.view.backgroundColor = UIColor.blackColor()
+        
+        WebSocketManager.shared.ready()
     }
     
     func websocketDidReceiveMessage(text: String) {
-        if text == "play" {
+        if (text == "play") {
             self.player.play()
+            return
         }
         
-        else {
-            let args = text.componentsSeparatedByString(" ")
-            let videoName = args[0]
-            let videoWidth = CGFloat(Double(args[1])!)
-            let videoHeight = CGFloat(Double(args[2])!)
-            let x = CGFloat(Double(args[3])!)
-            let y = CGFloat(Double(args[4])!)
-            
-            let videoPath = NSBundle.mainBundle().pathForResource(videoName, ofType: "mov")!
-            print(videoPath)
-            let videoUrl = NSURL(fileURLWithPath: videoPath)
-            print(videoUrl)
-            let frame = CGRectMake(-x, -y, videoWidth, videoHeight)
-            print(frame)
-            
-            self.player = AVPlayer(URL: videoUrl)
-            print(self.player)
-            let layer = AVPlayerLayer(player: self.player)
-            layer.frame = frame
-            
-            self.view.layer.addSublayer(layer)
-            
-            WebSocketManager.shared.send("ready")
-            print("Ready")
-        }
+        let args = text.componentsSeparatedByString(" ")
+        let videoName = args[0]
+        let videoWidth = CGFloat(Double(args[1])!)
+        let videoHeight = CGFloat(Double(args[2])!)
+        let x = CGFloat(Double(args[3])!)
+        let y = CGFloat(Double(args[4])!)
+        let when = NSDate(timeIntervalSince1970: Double(args[5])!)
+        print(when)
+        
+        let videoPath = NSBundle.mainBundle().pathForResource(videoName, ofType: "mov")!
+        let videoUrl = NSURL(fileURLWithPath: videoPath)
+        let frame = CGRectMake(-x, -y, videoWidth, videoHeight)
+        
+        self.player = AVPlayer(URL: videoUrl)
+        let layer = AVPlayerLayer(player: self.player)
+        layer.frame = frame
+        self.view.layer.addSublayer(layer)
+        
+//        let timer = NSTimer(fireDate: when, interval: 0, target: self, selector: #selector(play), userInfo: nil, repeats: false)
+//        NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
+//        NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: #selector(onTimerFire), userInfo: nil, repeats: true)
+        
+        WebSocketManager.shared.ready()
     }
+    
+//    func onTimerFire(timer: NSTimer) {
+//        print("onTimerFire")
+//        
+//        if (timer.fireDate.compare(NSDate()) == .OrderedAscending) {
+//            self.player.play()
+//            timer.invalidate()
+//        }
+//    }
+    
+//    func play() {
+//        self.player.play()
+//    }
 }

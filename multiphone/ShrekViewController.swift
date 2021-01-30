@@ -27,16 +27,18 @@ class ShrekViewController: UIViewController, WebSocketDelegateSimple {
         layer.frame = frame // UIScreen.mainScreen().bounds
         
         self.view.layer.addSublayer(layer)
+        
+        WebSocketManager.shared.ready()
     }
     
     func websocketDidReceiveMessage(text: String) {
         if text == "full" {
-            WebSocketManager.shared.send("ready")
+            WebSocketManager.shared.ready()
         }
             
         else if text == "short" {
             self.player.seekToTime(CMTimeMakeWithSeconds(1.5, 600), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
-            WebSocketManager.shared.send("ready")
+            WebSocketManager.shared.ready()
         }
             
         else if text == "play" {

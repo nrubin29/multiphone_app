@@ -10,18 +10,39 @@ import UIKit
 import AVFoundation
 
 class CameraViewController: UIViewController, WebSocketDelegateSimple {
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var captureSession: AVCaptureSession!
+    var stillImageOutput: AVCaptureStillImageOutput!
+    var videoConnection: AVCaptureConnection!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         WebSocketManager.shared.delegate = self
         
+        captureSession = AVCaptureSession()
+        captureSession.sessionPreset = AVCaptureSessionPresetPhoto
+        
+        let backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        let videoInput = try! AVCaptureDeviceInput(device: backCamera)
+        captureSession.addInput(videoInput)
+        
+        stillImageOutput = AVCaptureStillImageOutput()
+        stillImageOutput.outputSettings = [AVVideoCodecKey: AVVideoCodecJPEG]
+        captureSession.addOutput(stillImageOutput)
+        
+        videoConnection = stillImageOutput.connectionWithMediaType(AVMediaTypeVideo)
+        
+        captureSession.startRunning()
+        
         WebSocketManager.shared.ready()
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        
-    }
-    
+ 
     func websocketDidReceiveMessage(text: String) {
-        
+        stillImageOutput.captureStillImageAsynchronouslyFromConnection(videoConnection) { (imageSampleBuffer : CMSampleBuffer!, _) in
+            let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
+            let image = UIImage(data: imageData)
+            self.imageView.image = image
+        }
     }
 }

@@ -14,6 +14,8 @@
 		449652FE25C37369008D4285 /* ChessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449652FD25C37369008D4285 /* ChessViewController.swift */; };
 		44B3B0FC25AD314900271CEC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3B0FB25AD314900271CEC /* CameraViewController.swift */; };
 		44B3B10325AD351700271CEC /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3B10225AD351700271CEC /* CardViewController.swift */; };
+		44B46E3025D07F3A00069AA7 /* onealmond.mov in Resources */ = {isa = PBXBuildFile; fileRef = 44B46E2F25D07F3A00069AA7 /* onealmond.mov */; };
+		44B46E3925D080ED00069AA7 /* rickroll.mov in Resources */ = {isa = PBXBuildFile; fileRef = 44B46E3825D080ED00069AA7 /* rickroll.mov */; };
 		44CCE9AC25A2A7A000715608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE9AB25A2A7A000715608 /* AppDelegate.swift */; };
 		44CCE9AE25A2A7A000715608 /* ServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCE9AD25A2A7A000715608 /* ServerViewController.swift */; };
 		44CCE9B125A2A7A000715608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CCE9AF25A2A7A000715608 /* Main.storyboard */; };
@@ -99,6 +101,8 @@
 		449652FD25C37369008D4285 /* ChessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChessViewController.swift; sourceTree = "<group>"; };
 		44B3B0FB25AD314900271CEC /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		44B3B10225AD351700271CEC /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		44B46E2F25D07F3A00069AA7 /* onealmond.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = onealmond.mov; sourceTree = "<group>"; };
+		44B46E3825D080ED00069AA7 /* rickroll.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = rickroll.mov; sourceTree = "<group>"; };
 		44CCE9A825A2A7A000715608 /* multiphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CCE9AB25A2A7A000715608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44CCE9AD25A2A7A000715608 /* ServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				44CCE9B725A2A7A000715608 /* Info.plist */,
 				4481FDFE25A2DD37006FBCD1 /* shrek.mov */,
 				44D9C20725A523860086B696 /* noahytp.mov */,
+				44B46E2F25D07F3A00069AA7 /* onealmond.mov */,
+				44B46E3825D080ED00069AA7 /* rickroll.mov */,
 			);
 			path = multiphone;
 			sourceTree = "<group>";
@@ -289,7 +295,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B46E3025D07F3A00069AA7 /* onealmond.mov in Resources */,
 				4481FDFF25A2DD37006FBCD1 /* shrek.mov in Resources */,
+				44B46E3925D080ED00069AA7 /* rickroll.mov in Resources */,
 				44CCE9B625A2A7A000715608 /* LaunchScreen.storyboard in Resources */,
 				44D9C20825A523860086B696 /* noahytp.mov in Resources */,
 				44CCE9B325A2A7A000715608 /* Assets.xcassets in Resources */,

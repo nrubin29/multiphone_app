@@ -20,8 +20,12 @@ class VideoViewController: UIViewController, WebSocketDelegateSimple {
         WebSocketManager.shared.ready()
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        self.player.removeObserver(self, forKeyPath: "status")
+    }
+    
     func websocketDidReceiveMessage(text: String) {
-        if (text == "play") {
+        if text == "play" {
             self.player.play()
             return
         }
@@ -44,11 +48,21 @@ class VideoViewController: UIViewController, WebSocketDelegateSimple {
         layer.frame = frame
         self.view.layer.addSublayer(layer)
         
+        self.player.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.Initial, context: nil)
+        
 //        let timer = NSTimer(fireDate: when, interval: 0, target: self, selector: #selector(play), userInfo: nil, repeats: false)
 //        NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
 //        NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: #selector(onTimerFire), userInfo: nil, repeats: true)
         
-        WebSocketManager.shared.ready()
+//        WebSocketManager.shared.ready()
+    }
+    
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+        if object != nil && object! as! NSObject == self.player && keyPath! == "status" {
+            if player.status == AVPlayerStatus.ReadyToPlay {
+                WebSocketManager.shared.ready()
+            }
+        }
     }
     
 //    func onTimerFire(timer: NSTimer) {

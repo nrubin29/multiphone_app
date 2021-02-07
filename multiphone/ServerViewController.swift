@@ -8,14 +8,13 @@
 
 import UIKit
 
-class ServerViewController: UIViewController, UITextFieldDelegate, WebSocketDelegateSimple {
+class ServerViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ipAddressField: UITextField!
     @IBOutlet weak var portField: UITextField!
     @IBOutlet weak var phoneIdField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        WebSocketManager.shared.delegate = self
         
         self.hideKeyboardWhenTappedAround()
         ipAddressField.delegate = self
@@ -42,13 +41,6 @@ class ServerViewController: UIViewController, UITextFieldDelegate, WebSocketDele
 
     @IBAction func onConnectTapped(sender: AnyObject) {
         WebSocketManager.shared.connect(ipAddressField.text!, portField.text!, phoneIdField.text!)
-    }
-    
-    func websocketDidReceiveMessage(text: String) {
-//        if text == "shrek" {
-//            let vc = self.storyboard!.instantiateViewControllerWithIdentifier("shrek")
-//            self.presentViewController(vc, animated: true, completion: nil)
-//        }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

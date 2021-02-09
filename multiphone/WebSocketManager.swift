@@ -64,7 +64,7 @@ class WebSocketManager: WebSocketDelegate {
     func websocketDidReceiveMessage(socket: WebSocket, text: String) {
         print("websocketDidReceiveMessage(): \(text)")
         
-        if (text == "connected") {
+        if text == "connected" {
             isConnected = true
             
             if let topViewController = getTopViewController() {
@@ -73,10 +73,21 @@ class WebSocketManager: WebSocketDelegate {
             }
         }
         
-        else if (text == "exit") {
+        else if text == "exit" {
             if let topViewController = getTopViewController() {
                 topViewController.dismissViewControllerAnimated(true, completion: nil)
             }
+        }
+            
+        else if text.hasPrefix("orientation") && text.componentsSeparatedByString(" ").count > 1 {
+            let orientations = [
+                "left": UIInterfaceOrientation.LandscapeLeft.rawValue,
+                "right": UIInterfaceOrientation.LandscapeRight.rawValue,
+                "up": UIInterfaceOrientation.Portrait.rawValue
+            ]
+            
+            UIDevice.currentDevice().setValue(orientations[text.componentsSeparatedByString(" ")[1]], forKey: "orientation")
+            UIViewController.attemptRotationToDeviceOrientation()
         }
         
         else {

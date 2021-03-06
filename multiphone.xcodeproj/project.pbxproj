@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442D3EF325F426D20057C5EB /* luke.mov in Resources */ = {isa = PBXBuildFile; fileRef = 442D3EF225F426D20057C5EB /* luke.mov */; };
+		442D3EFC25F428F10057C5EB /* ltt.mov in Resources */ = {isa = PBXBuildFile; fileRef = 442D3EFB25F428F10057C5EB /* ltt.mov */; };
+		442D3EFE25F42A970057C5EB /* intro.mov in Resources */ = {isa = PBXBuildFile; fileRef = 442D3EFD25F42A970057C5EB /* intro.mov */; };
+		442D3F0025F42B7B0057C5EB /* noah.mov in Resources */ = {isa = PBXBuildFile; fileRef = 442D3EFF25F42B7B0057C5EB /* noah.mov */; };
 		4481FDF325A2D7EE006FBCD1 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481FDF225A2D7EE006FBCD1 /* WebSocketManager.swift */; };
 		4481FDFB25A2D98B006FBCD1 /* ShrekViewControllerMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */; };
 		4481FDFF25A2DD37006FBCD1 /* shrek.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4481FDFE25A2DD37006FBCD1 /* shrek.mov */; };
@@ -94,6 +98,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		442D3EF225F426D20057C5EB /* luke.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = luke.mov; sourceTree = "<group>"; };
+		442D3EFB25F428F10057C5EB /* ltt.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = ltt.mov; sourceTree = "<group>"; };
+		442D3EFD25F42A970057C5EB /* intro.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = intro.mov; sourceTree = "<group>"; };
+		442D3EFF25F42B7B0057C5EB /* noah.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = noah.mov; sourceTree = "<group>"; };
 		4481FDF225A2D7EE006FBCD1 /* WebSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		4481FDFA25A2D98B006FBCD1 /* ShrekViewControllerMP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShrekViewControllerMP.swift; sourceTree = "<group>"; };
 		4481FDFE25A2DD37006FBCD1 /* shrek.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = shrek.mov; sourceTree = "<group>"; };
@@ -166,6 +174,10 @@
 				44D9C20725A523860086B696 /* noahytp.mov */,
 				44B46E2F25D07F3A00069AA7 /* onealmond.mov */,
 				44B46E3825D080ED00069AA7 /* rickroll.mov */,
+				442D3EF225F426D20057C5EB /* luke.mov */,
+				442D3EFF25F42B7B0057C5EB /* noah.mov */,
+				442D3EFB25F428F10057C5EB /* ltt.mov */,
+				442D3EFD25F42A970057C5EB /* intro.mov */,
 			);
 			path = multiphone;
 			sourceTree = "<group>";
@@ -295,10 +307,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442D3F0025F42B7B0057C5EB /* noah.mov in Resources */,
 				44B46E3025D07F3A00069AA7 /* onealmond.mov in Resources */,
+				442D3EFC25F428F10057C5EB /* ltt.mov in Resources */,
+				442D3EF325F426D20057C5EB /* luke.mov in Resources */,
 				4481FDFF25A2DD37006FBCD1 /* shrek.mov in Resources */,
 				44B46E3925D080ED00069AA7 /* rickroll.mov in Resources */,
 				44CCE9B625A2A7A000715608 /* LaunchScreen.storyboard in Resources */,
+				442D3EFE25F42A970057C5EB /* intro.mov in Resources */,
 				44D9C20825A523860086B696 /* noahytp.mov in Resources */,
 				44CCE9B325A2A7A000715608 /* Assets.xcassets in Resources */,
 				44CCE9B125A2A7A000715608 /* Main.storyboard in Resources */,

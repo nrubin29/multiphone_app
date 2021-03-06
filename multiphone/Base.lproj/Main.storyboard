@@ -76,7 +76,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10.0.0.187" borderStyle="roundedRect" placeholder="IP Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3f7-iu-v2N">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10.0.0.188" borderStyle="roundedRect" placeholder="IP Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3f7-iu-v2N">
                                 <rect key="frame" x="200" y="247" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="dyi-zV-ojl"/>

@@ -41,6 +41,9 @@ class CameraViewController: UIViewController, WebSocketDelegateSimple {
     func websocketDidReceiveMessage(text: String) {
         stillImageOutput.captureStillImageAsynchronouslyFromConnection(videoConnection) { (imageSampleBuffer : CMSampleBuffer!, _) in
             let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageSampleBuffer)
+            let imageBase64 = imageData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+            
+            WebSocketManager.shared.send("image \(imageBase64)")
             let image = UIImage(data: imageData)
             self.imageView.image = image
         }

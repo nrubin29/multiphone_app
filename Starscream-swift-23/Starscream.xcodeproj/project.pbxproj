@@ -311,6 +311,7 @@
 					};
 					6B3E79E519D48B7F006071F7 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 3X4CJ3X2T6;
 						LastSwiftMigration = 0800;
 					};
 					6B3E79F019D48B7F006071F7 = {

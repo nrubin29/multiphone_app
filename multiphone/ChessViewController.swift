@@ -44,8 +44,13 @@ class ChessViewController: UIViewController, WebSocketDelegateSimple {
             let row = Int(args[2])!
             let col = Int(args[3])!
             
-            if row + col % 2 == 0 {
-                self.view.backgroundColor = UIColor.grayColor()
+            if (row + col) % 2 == 0 {
+                self.view.backgroundColor = UIColor.brownColor()
+            }
+            
+            else {
+                // Beige
+                self.view.backgroundColor = UIColor(red: 245, green: 245, blue: 220, alpha: 1)
             }
         }
     }

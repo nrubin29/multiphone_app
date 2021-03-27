@@ -30,16 +30,6 @@ class ChessViewController: UIViewController, WebSocketDelegateSimple {
     func websocketDidReceiveMessage(text: String) {
         let args = text.componentsSeparatedByString(" ")
         
-        if args[0] == "empty" {
-            pieceLabel.text = ""
-            return
-        }
-        
-        let piece = Int(args[0])!
-        let color = Int(args[1])!
-        
-        pieceLabel.text = CHESS_PIECES[color][piece]
-        
         if args.count > 2 {
             let row = Int(args[2])!
             let col = Int(args[3])!
@@ -47,11 +37,21 @@ class ChessViewController: UIViewController, WebSocketDelegateSimple {
             if (row + col) % 2 == 0 {
                 self.view.backgroundColor = UIColor.brownColor()
             }
-            
+                
             else {
                 // Beige
                 self.view.backgroundColor = UIColor(red: 245, green: 245, blue: 220, alpha: 1)
             }
+        }
+        
+        if args[0] == "empty" {
+            pieceLabel.text = ""
+        }
+        
+        else {
+            let piece = Int(args[0])!
+            let color = Int(args[1])!
+            pieceLabel.text = CHESS_PIECES[color][piece]
         }
     }
     
